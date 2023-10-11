@@ -75,7 +75,7 @@ async function bootstrap() {
   //Call sendDailyWeatherUpdates every day at a specific time
   //const rule = new schedule.RecurrenceRule();
   const rule = new schedule.RecurrenceRule();
-  rule.hour = 17;
+  rule.hour = 9;
   rule.minute = 15;
   schedule.scheduleJob(rule, async () => {
     const subscribedUsers = Array.from(botService.getSubscribedUsers());
