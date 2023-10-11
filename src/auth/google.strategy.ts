@@ -9,8 +9,8 @@ export class GoogleAuthGuard extends AuthGuard('google') {}
 export class GoogleStrategy extends PassportStrategy(Strategy, 'google') {
   constructor(private readonly authService: AuthService) {
     super({
-      clientID: 'YOUR_GOOGLE_CLIENT_ID',
-      clientSecret: 'YOUR_GOOGLE_CLIENT_SECRET',
+      clientID: '307170329728-mvqkv1du8tn57f7ici77s1ovcnnbpbdl.apps.googleusercontent.com',
+      clientSecret: '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',
       callbackURL: 'http://localhost:3000/auth/google/callback',
       passReqToCallback: true,
       scope: ['profile', 'email'],
