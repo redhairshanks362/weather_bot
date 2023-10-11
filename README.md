@@ -1,73 +1,35 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Testing the Telegram Bot
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This guide provides instructions on how to test the deployed Telegram bot powered by a Nest.js application on the Cyclic platform. The bot is designed to provide daily weather updates. 
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Please note that the bot is live and accessible via the deployed Nest.js app on Cyclic.
 
-## Description
+Deployed App Link - https://real-plum-eagle-tutu.cyclic.app/
+Telegram Bot - @jonsnow362_bot
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Step 1: Subscription
 
-## Installation
+1. Access the bot by visiting the deployed Nest.js app on Cyclic.
+2. Click on the '/subscribe' endpoint.
+3. After clicking '/subscribe,' the bot will ask for your location. This step is essential to provide you with accurate weather updates.
+4. Click "Share Location" to allow the bot to access your location. 
 
-```bash
-$ npm install
-```
+   > **Note:** Make sure that you have configured your Telegram privacy settings to allow the bot to access your location always.
 
-## Running the app
+5. Upon successfully sharing your location, you'll be subscribed to receive daily weather updates.
 
-```bash
-# development
-$ npm run start
+## Step 2: Admin Panel
 
-# watch mode
-$ npm run start:dev
+1. The `/admin` route is configured with Google authentication, ensuring the security of the admin panel. To access it, use the following link: [Your App URL]/admin.
+2. You will be prompted to sign in using your Google account. 
+3. Once you are authenticated, you can access the admin panel for further configuration or management.
 
-# production mode
-$ npm run start:prod
-```
+## Note
 
-## Test
+The bot has been configured to send daily weather updates. If you are subscribed and have allowed location access, you will receive daily weather updates automatically.
 
-```bash
-# unit tests
-$ npm run test
+Please keep in mind that the bot may send updates at a specific time of day which is 9:15 am, which can be configured in the code. Make sure to check when the updates are scheduled and be prepared to receive the daily weather information.
 
-# e2e tests
-$ npm run test:e2e
+Thank you for using our Telegram bot. If you encounter any issues or have questions, please feel free to contact our support team for assistance.
 
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Happy testing! 🌦️🤖
