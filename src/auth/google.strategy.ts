@@ -11,7 +11,7 @@ export class GoogleStrategy extends PassportStrategy(Strategy, 'google') {
     super({
       clientID: '307170329728-mvqkv1du8tn57f7ici77s1ovcnnbpbdl.apps.googleusercontent.com',
       clientSecret: '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',
-      callbackURL: 'http://localhost:3000/auth/google/callback',
+      callbackURL: 'https://real-plum-eagle-tutu.cyclic.app/auth/google/callback',
       passReqToCallback: true,
       scope: ['profile', 'email'],
     });
